@@ -48,10 +48,10 @@ cxb.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["u92360864664a0d310df002c8d408e642"]
-owner = ["u92360864664a0d310df002c8d408e642"]
-admin = ["ucd086d55a11300efdccec4fc26442686"]
-staff = ["ucd086d55a11300efdccec4fc26442686"]
+creator = ["u4862fe4b182b2fd194a3108e2f3662e8"]
+owner = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
+admin = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
+staff = ["u4862fe4b182b2fd194a3108e2f3662e8"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -83,7 +83,7 @@ settings = {
     "group":{},
     "groupPicture":False,
     "changePicture":False,
-    "autoJoinTicket":False,
+    "autoJoinTicket":True,
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -138,10 +138,10 @@ wait = {
     "sticker":False,
     "selfbot":True,
     "mention":"ᴍᴀsᴜᴋ ᴋᴋ ᴊᴀɴ ᴍᴀʟᴜ ᴍᴀʟᴜ ɢᴋ ᴋᴇ ʙᴀɢɪᴀɴ ɴᴛᴀʀ",
-    "Respontag":"❄☞ɴᴏ ᴛᴀɢ ᴍᴇ ᴛʜᴀɴᴋs...🤔",
+    "Respontag":"แทคทำไม คิดถึงอะดิ 😄",
     "welcome":"ᴡᴇʟʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ғᴀᴍs❄☞",
-    "comment":"ᴀᴜᴛᴏ ʟɪᴋᴇ ʙʏ....❄☞PRILLY ᴛᴇᴀᴍ ʙᴏᴛ☜❄",
-    "message":"ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅ ᴍᴇ\n❄☞PRILLY ᴛᴇᴀᴍ ʙᴏᴛ☜❄\n\nᴏᴘᴇɴ ᴏʀᴅᴇʀ:\n❄☞ 1 Sb + 3 assist\n☞ 1 Sb + 5 assist\n\nᴀɴᴅᴀ ᴍɪɴᴀᴛ..\nᴍɪɴᴀᴛ ᴄᴘᴄ ɢʜᴀɴ ❄",
+    "comment":"ᴀᴜᴛᴏ ʟɪᴋᴇ ʙʏ....【さัএπัஞ✵ບิथℓℓҨतΩ】 ᴛᴇᴀᴍ ʙᴏᴛ",
+    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】 :\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status ⏩ 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat ⏩ 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free ⏩ 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/~max_pv\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
     }
 
 read = {
@@ -309,138 +309,138 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = " 🌠「 Selfbot Menu 」\n • Gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Me\n" + \
-                  "🔥 " + key + "Mid「@」\n" + \
-                  "🔥 " + key + "Info「@」\n" + \
-                  "🔥 " + key + "Nk「@」\n" + \
-                  "🔥 " + key + "Kick「@」\n" + \
-                  "🔥 " + key + "Mybot\n" + \
-                  "🔥 " + key + "Status\n" + \
-                  "🔥 " + key + "About\n" + \
-                  "🔥 " + key + "Restart\n" + \
-                  "🔥 " + key + "Runtime\n" + \
-                  "🔥 " + key + "Creator\n" + \
-                  "🔥 " + key + "Speed/Sp\n" + \
-                  "🔥 " + key + "Spbot\n" + \
-                  "🔥 " + key + "tag\n" + \
-                  "🔥 " + key + "Joinall\n" + \
-                  "🔥 " + key + "Byeall\n" + \
-                  "🔥 " + key + "Kiker bye\n" + \
-                  "🔥 " + key + "Leave「Namagrup」\n" + \
-                  "🔥 " + key + "Ginfo\n" + \
-                  "🔥 " + key + "Open\n" + \
-                  "🔥 " + key + "Bot open\n" + \
-                  "🔥 " + key + "Close\n" + \
-                  "🔥 " + key + "Bot close\n" + \
-                  "🔥 " + key + "Url grup\n" + \
-                  "🔥 " + key + "Bot urlgrup\n" + \
-                  "🔥 " + key + "Gruplist\n" + \
-                  "🔥 " + key + "Bot glist\n" + \
-                  "🔥 " + key + "Infogrup「angka」\n" + \
-                  "🔥 " + key + "Infomem「angka」\n" + \
-                  "🔥 " + key + "Remove chat\n" + \
-                  "🔥 " + key + "Lurking「on/off」\n" + \
-                  "🔥 " + key + "Lurkers\n" + \
-                  "🔥 " + key + "Sider「on/off」\n" + \
-                  "🔥 " + key + "Updatefoto\n" + \
-                  "🔥 " + key + "Updategrup\n" + \
-                  "🔥 " + key + "Updatebot\n" + \
-                  "🔥 " + key + "Broadcast:「Text」\n" + \
-                  "🔥 " + key + "Setkey「New Key」\n" + \
-                  "🔥 " + key + "Mykey\n" + \
-                  "🔥 " + key + "Resetkey\n" + \
-                  "\n\n 🌠「 Media & Hiburan 」\n• Gunakan「 " + key + " 」di depan\n\n" + \
+    helpMessage = " ⚠「 Selfbot Menu 」\n • Gunakan「 " + key + " 」di depan\n\n" + \
+                  "Ⓜ " + key + "Me\n" + \
+                  "Ⓜ " + key + "Mid「@」\n" + \
+                  "Ⓜ " + key + "Info「@」\n" + \
+                  "Ⓜ " + key + "Nk「@」\n" + \
+                  "Ⓜ " + key + "Kick「@」\n" + \
+                  "Ⓜ " + key + "Mybot\n" + \
+                  "Ⓜ " + key + "Status\n" + \
+                  "Ⓜ " + key + "About\n" + \
+                  "Ⓜ " + key + "Restart\n" + \
+                  "Ⓜ " + key + "Runtime\n" + \
+                  "Ⓜ " + key + "Creator\n" + \
+                  "Ⓜ " + key + "Speed/Sp\n" + \
+                  "Ⓜ " + key + "Spbot\n" + \
+                  "Ⓜ " + key + "tag\n" + \
+                  "Ⓜ " + key + "Joinall\n" + \
+                  "Ⓜ " + key + "Byeall\n" + \
+                  "Ⓜ " + key + "Kiker bye\n" + \
+                  "Ⓜ " + key + "Leave「Namagrup」\n" + \
+                  "Ⓜ " + key + "Ginfo\n" + \
+                  "Ⓜ " + key + "Open\n" + \
+                  "Ⓜ " + key + "Bot open\n" + \
+                  "Ⓜ " + key + "Close\n" + \
+                  "Ⓜ " + key + "Bot close\n" + \
+                  "Ⓜ " + key + "Url grup\n" + \
+                  "Ⓜ " + key + "Bot urlgrup\n" + \
+                  "Ⓜ " + key + "Gruplist\n" + \
+                  "Ⓜ " + key + "Bot glist\n" + \
+                  "Ⓜ " + key + "Infogrup「angka」\n" + \
+                  "Ⓜ " + key + "Infomem「angka」\n" + \
+                  "Ⓜ " + key + "Remove chat\n" + \
+                  "Ⓜ " + key + "Lurking「on/off」\n" + \
+                  "Ⓜ " + key + "Lurkers\n" + \
+                  "Ⓜ " + key + "Sider「on/off」\n" + \
+                  "Ⓜ " + key + "Updatefoto\n" + \
+                  "Ⓜ " + key + "Updategrup\n" + \
+                  "Ⓜ " + key + "Updatebot\n" + \
+                  "Ⓜ " + key + "Broadcast:「Text」\n" + \
+                  "Ⓜ " + key + "Setkey「New Key」\n" + \
+                  "Ⓜ " + key + "Mykey\n" + \
+                  "Ⓜ " + key + "Resetkey\n" + \
+                  "\n\n 🐎「 Media & Hiburan 」\n• Gunakan「 " + key + " 」di depan\n\n" + \
                   " " + key + "ID line:「Id Line nya」\n" + \
-                  "🔥 " + key + "Sholat:「Nama Kota」\n" + \
-                  "🔥 " + key + "Cuaca:「Nama Kota」\n" + \
-                  "🔥 " + key + "Lokasi:「Nama Kota」\n" + \
-                  "🔥 " + key + "Music:「Judul Lagu」\n" + \
-                  "🔥 " + key + "Lirik:「Judul Lagu」\n" + \
-                  "🔥 " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "🔥 " + key + "Ytmp4:「Judul Video」\n" + \
-                  "🔥 " + key + "Profileig:「Nama IG」\n" + \
-                  "🔥 " + key + "Cekdate:「tgl-bln-thn」\n" + \
-                  "🔥 " + key + "Jumlah:「angka」\n" + \
-                  "🔥 " + key + "Spamtag「@」\n" + \
-                  "🔥 " + key + "Spamcall:「jumlahnya」\n" + \
-                  "🔥 " + key + "Spamcall" + \
-                  "\n\n 🌠「 Setting Protection 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Notag「on/off」\n" + \
-                  "🔥 " + key + "Allpro「on/off」\n" + \
-                  "🔥 " + key + "Protecturl「on/off」\n" + \
-                  "🔥 " + key + "Protectjoin「on/off」\n" + \
-                  "🔥 " + key + "Protectkick「on/off」\n" + \
-                  "🔥 " + key + "Protectcancel「on/off」" + \
-                  "\n\n 🌠「 Setting User 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Sticker「on/off」\n" + \
-                  "🔥 " + key + "Respon「on/off」\n" + \
-                  "🔥 " + key + "Contact「on/off」\n" + \
-                  "🔥 " + key + "Autojoin「on/off」\n" + \
-                  "🔥 " + key + "Autoadd「on/off」\n" + \
-                  "🔥 " + key + "Welcome「on/off」\n" + \
-                  "🔥 " + key + "Autoleave「on/off」" + \
-                  "\n\n 🌠「 Setting Admin 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Admin:on\n" + \
-                  "🔥 " + key + "Admin:repeat\n" + \
-                  "🔥 " + key + "Staff:on\n" + \
-                  "🔥 " + key + "Staff:repeat\n" + \
-                  "🔥 " + key + "Bot:on\n" + \
-                  "🔥 " + key + "Bot:repeat\n" + \
-                  "🔥 " + key + "Adminadd「@」\n" + \
-                  "🔥 " + key + "Admindell「@」\n" + \
-                  "🔥 " + key + "Staffadd「@」\n" + \
-                  "🔥 " + key + "Staffdell「@」\n" + \
-                  "🔥 " + key + "Botadd「@」\n" + \
-                  "🔥 " + key + "Botdell「@」\n" + \
-                  "🔥 " + key + "Refresh\n" + \
-                  "🔥 " + key + "Listbot\n" + \
-                  "🔥 " + key + "Listadmin\n" + \
-                  "🔥 " + key + "Listprotect\n\n" + \
+                  "Ⓜ " + key + "Sholat:「Nama Kota」\n" + \
+                  "Ⓜ " + key + "Cuaca:「Nama Kota」\n" + \
+                  "Ⓜ " + key + "Lokasi:「Nama Kota」\n" + \
+                  "Ⓜ " + key + "Music:「Judul Lagu」\n" + \
+                  "Ⓜ " + key + "Lirik:「Judul Lagu」\n" + \
+                  "Ⓜ " + key + "Ytmp3:「Judul Lagu」\n" + \
+                  "Ⓜ " + key + "Ytmp4:「Judul Video」\n" + \
+                  "Ⓜ " + key + "Profileig:「Nama IG」\n" + \
+                  "Ⓜ " + key + "Cekdate:「tgl-bln-thn」\n" + \
+                  "Ⓜ " + key + "Jumlah:「angka」\n" + \
+                  "Ⓜ " + key + "Spamtag「@」\n" + \
+                  "Ⓜ " + key + "Spamcall:「jumlahnya」\n" + \
+                  "Ⓜ " + key + "Spamcall" + \
+                  "\n\n 🐎「 Setting Protection 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
+                  "Ⓜ " + key + "Notag「on/off」\n" + \
+                  "Ⓜ " + key + "Allpro「on/off」\n" + \
+                  "Ⓜ " + key + "Protecturl「on/off」\n" + \
+                  "Ⓜ " + key + "Protectjoin「on/off」\n" + \
+                  "Ⓜ " + key + "Protectkick「on/off」\n" + \
+                  "Ⓜ " + key + "Protectcancel「on/off」" + \
+                  "\n\n 🐎「 Setting User 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
+                  "Ⓜ " + key + "Sticker「on/off」\n" + \
+                  "Ⓜ " + key + "Respon「on/off」\n" + \
+                  "Ⓜ " + key + "Contact「on/off」\n" + \
+                  "Ⓜ " + key + "Autojoin「on/off」\n" + \
+                  "Ⓜ " + key + "Autoadd「on/off」\n" + \
+                  "Ⓜ " + key + "Welcome「on/off」\n" + \
+                  "Ⓜ " + key + "Autoleave「on/off」" + \
+                  "\n\n 🐎「 Setting Admin 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
+                  "Ⓜ " + key + "Admin:on\n" + \
+                  "Ⓜ " + key + "Admin:repeat\n" + \
+                  "Ⓜ " + key + "Staff:on\n" + \
+                  "Ⓜ " + key + "Staff:repeat\n" + \
+                  "Ⓜ " + key + "Bot:on\n" + \
+                  "Ⓜ " + key + "Bot:repeat\n" + \
+                  "Ⓜ " + key + "Adminadd「@」\n" + \
+                  "Ⓜ " + key + "Admindell「@」\n" + \
+                  "Ⓜ " + key + "Staffadd「@」\n" + \
+                  "Ⓜ " + key + "Staffdell「@」\n" + \
+                  "Ⓜ " + key + "Botadd「@」\n" + \
+                  "Ⓜ " + key + "Botdell「@」\n" + \
+                  "Ⓜ " + key + "Refresh\n" + \
+                  "Ⓜ " + key + "Listbot\n" + \
+                  "Ⓜ " + key + "Listadmin\n" + \
+                  "Ⓜ " + key + "Listprotect\n\n" + \
                   "\n↪Ketik [Refresh] Jika sudah menggunakan command diatas."
     return helpMessage
 
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = " 🌠「 Setting Blacklist 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Blc\n" + \
-                  "🔥 " + key + "Ban:on\n" + \
-                  "🔥 " + key + "Unban:on\n" + \
-                  "🔥 " + key + "Ban「@」\n" + \
-                  "🔥 " + key + "Unban「@」\n" + \
-                  "🔥 " + key + "Talkban「@」\n" + \
-                  "🔥 " + key + "Untalkban「@」\n" + \
-                  "🔥 " + key + "Talkban:on\n" + \
-                  "🔥 " + key + "Untalkban:on\n" + \
-                  "🔥 " + key + "Banlist\n" + \
-                  "🔥 " + key + "Talkbanlist\n" + \
-                  "🔥 " + key + "Clearban\n" + \
-                  "🔥 " + key + "Refresh" + \
-                  "\n\n 🌠「 Setting Menu 」\n • Gunakan「 " + key + " 」di depan\n\n" + \
-                  "🔥 " + key + "Cek sider\n" + \
-                  "🔥 " + key + "Cek spam\n" + \
-                  "🔥 " + key + "Cek pesan \n" + \
-                  "🔥 " + key + "Cek respon \n" + \
-                  "🔥 " + key + "Cek welcome\n" + \
-                  "🔥 " + key + "Set sider:「Text」\n" + \
-                  "🔥 " + key + "Set spam:「Text」\n" + \
-                  "🔥 " + key + "Set pesan:「Text」\n" + \
-                  "🔥 " + key + "Set respon:「Text」\n" + \
-                  "🔥 " + key + "Set welcome:「Text」\n" + \
-                  "🔥 " + key + "Myname:「Nama」\n" + \
-                  "🔥 " + key + "X1name:「Nama」\n" + \
-                  "🔥 " + key + "X2name:「Nama」\n" + \
-                  "🔥 " + key + "X3name:「Nama」\n" + \
-                  "🔥 " + key + "X4name:「Nama」\n" + \
-                  "🔥 " + key + "X5name:「Nama」\n" + \
-                  "🔥 " + key + "X1up「Kirim fhoto」\n" + \
-                  "🔥 " + key + "X2up「Kirim fhoto」\n" + \
-                  "🔥 " + key + "X3up「Kirim fhoto」\n" + \
-                  "🔥 " + key + "X4up「Kirim fhoto」\n" + \
-                  "🔥 " + key + "X5up「Kirim fhoto」\n" + \
-                  "🔥 " + key + "Gift:「Mid」「Jumlah」\n" + \
-                  "🔥 " + key + "Spam:「Mid」「Jumlah」\n" + \
+    helpMessage1 = " 😈「 Setting Blacklist 」\n • Jangan gunakan「 " + key + " 」di depan\n\n" + \
+                  "🛡 " + key + "Blc\n" + \
+                  "🛡 " + key + "Ban:on\n" + \
+                  "🛡 " + key + "Unban:on\n" + \
+                  "🛡 " + key + "Ban「@」\n" + \
+                  "🛡 " + key + "Unban「@」\n" + \
+                  "🛡 " + key + "Talkban「@」\n" + \
+                  "🛡 " + key + "Untalkban「@」\n" + \
+                  "🛡 " + key + "Talkban:on\n" + \
+                  "🛡 " + key + "Untalkban:on\n" + \
+                  "🛡 " + key + "Banlist\n" + \
+                  "🛡 " + key + "Talkbanlist\n" + \
+                  "🛡 " + key + "Clearban\n" + \
+                  "🛡 " + key + "Refresh" + \
+                  "\n\n 😈「 Setting Menu 」\n • Gunakan「 " + key + " 」di depan\n\n" + \
+                  "🛡 " + key + "Cek sider\n" + \
+                  "🛡 " + key + "Cek spam\n" + \
+                  "🛡 " + key + "Cek pesan \n" + \
+                  "🛡 " + key + "Cek respon \n" + \
+                  "🛡 " + key + "Cek welcome\n" + \
+                  "🛡 " + key + "Set sider:「Text」\n" + \
+                  "🛡 " + key + "Set spam:「Text」\n" + \
+                  "🛡 " + key + "Set pesan:「Text」\n" + \
+                  "🛡 " + key + "Set respon:「Text」\n" + \
+                  "🛡 " + key + "Set welcome:「Text」\n" + \
+                  "🛡 " + key + "Myname:「Nama」\n" + \
+                  "🛡 " + key + "X1name:「Nama」\n" + \
+                  "🛡 " + key + "X2name:「Nama」\n" + \
+                  "🛡 " + key + "X3name:「Nama」\n" + \
+                  "🛡 " + key + "X4name:「Nama」\n" + \
+                  "🛡 " + key + "X5name:「Nama」\n" + \
+                  "🛡 " + key + "X1up「Kirim fhoto」\n" + \
+                  "🛡 " + key + "X2up「Kirim fhoto」\n" + \
+                  "🛡 " + key + "X3up「Kirim fhoto」\n" + \
+                  "🛡 " + key + "X4up「Kirim fhoto」\n" + \
+                  "🛡 " + key + "X5up「Kirim fhoto」\n" + \
+                  "🛡 " + key + "Gift:「Mid」「Jumlah」\n" + \
+                  "🛡 " + key + "Spam:「Mid」「Jumlah」\n" + \
                   "\n↪Ketik [Refresh] Jika sudah menggunakan command diatas."                          
     return helpMessage1
 
@@ -705,6 +705,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
+                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
         if op.type == 19:
             if op.param1 in protectkick:
@@ -1348,13 +1349,15 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
-                           
+                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+
                         if cmd == "bot key":
                           #if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage = help()
                                ki.sendMessage(msg.to, str(helpMessage))
-                                                                                     
+                               ki.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                                                     
                         if cmd == "bot on":
                             if msg._from in admin:
                                 wait["selfbot"] = True
@@ -1370,20 +1373,21 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage1 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage1))
+                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
                         elif cmd == "bot key2":
                           #if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage1 = helpbot()
                                ki.sendMessage(msg.to, str(helpMessage1))
-                              
+                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
                               
                         elif cmd == "status":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "   ۩۞۩🔥 •ѕєттίɴɢ в๏tѕ• 🔥۩۞۩\n\n                ∆ᴬᵘᵗᵒᵐᵃᵗⁱᶜᵃˡˡʸ∆\n"
+                                md = "   ۩۞۩【さัএπัஞ✵ບิथℓℓҨतΩ】۩۞۩\n\n                ∆ᴬᵘᵗᵒᵐᵃᵗⁱᶜᵃˡˡʸ∆\n"
                                 if wait["sticker"] == True: md+="􁤁􀇜key􏿿  Sᴛɪᴄᴋᴇʀ ➳「⚫」\n"
                                 else: md+="􀔃􀆓lock and key􏿿  Sᴛɪᴄᴋᴇʀ ➳「⚪」\n"
                                 if wait["contact"] == True: md+="􁤁􀇜key􏿿  Cᴏɴᴛᴀᴄᴛ ➳「⚫」\n"
@@ -1410,14 +1414,14 @@ def bot(op):
                                 else: md+="􀔃􀆓lock and key􏿿  Pʀᴏᴛᴇᴄᴛ ᴋɪᴄᴋ ➳「⚪」\n"
                                 if msg.to in protectcancel: md+="􁤁􀇜key􏿿  Pʀᴏᴛᴇᴄᴛ ᴄᴀɴᴄᴇʟ ➳「⚫」\n"
                                 else: md+="􀔃􀆓lock and key􏿿  Pʀᴏᴛᴇᴄᴛ ᴄᴀɴᴄᴇʟ ➳「⚪」\n"
-                                cl.sendMessage(msg.to, md+"\n\n ⌬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n⌚ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n               ꜱᴇᴛᴛɪɴɢ ᴜᴩᴅᴀᴛᴇᴅ")
+                                cl.sendMessage(msg.to, md+"\n\n ⌬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n⌚ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n【さัএπัஞ✵ບิथℓℓҨतΩ】")
                                 
                         elif cmd == "bot status":
                           #if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "   ۩۞۩🔥 •ѕєттίɴɢ в๏tѕ• 🔥۩۞۩\n\n                ∆ᴬᵘᵗᵒᵐᵃᵗⁱᶜᵃˡˡʸ∆\n"
+                                md = "   ۩۞۩【さัএπัஞ✵ບิथℓℓҨतΩ】۩۞۩\n\n                ∆ᴬᵘᵗᵒᵐᵃᵗⁱᶜᵃˡˡʸ∆\n"
                                 if wait["sticker"] == True: md+="􁤁􀇜key􏿿  Sᴛɪᴄᴋᴇʀ ➳「⚫」\n"
                                 else: md+="􀔃􀆓lock and key􏿿  Sᴛɪᴄᴋᴇʀ ➳「⚪」\n"
                                 if wait["contact"] == True: md+="􁤁􀇜key􏿿  Cᴏɴᴛᴀᴄᴛ ➳「⚫」\n"
@@ -1444,12 +1448,12 @@ def bot(op):
                                 else: md+="􀔃􀆓lock and key􏿿  Pʀᴏᴛᴇᴄᴛ ᴋɪᴄᴋ ➳「⚪」\n"                                
                                 if msg.to in protectcancel: md+="􁤁􀇜key􏿿  Pʀᴏᴛᴇᴄᴛ ᴄᴀɴᴄᴇʟ ➳「⚫」\n"
                                 else: md+="􀔃􀆓lock and key􏿿  Pʀᴏᴛᴇᴄᴛ ᴄᴀɴᴄᴇʟ ➳「⚪」\n"
-                                ki.sendMessage(msg.to, md+"\n\n ⌬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n⌚ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n               ꜱᴇᴛᴛɪɴɢ ᴜᴩᴅᴀᴛᴇᴅ")
+                                ki.sendMessage(msg.to, md+"\n\n ⌬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n⌚ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n【さัএπัஞ✵ບิथℓℓҨतΩ】")
                                 
                                                                     
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator XBot") 
+                                cl.sendText(msg.to,"Creator 【さัএπัஞ✵ບิथℓℓҨतΩ】") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1546,7 +1550,7 @@ def bot(op):
                                pesan = text.replace(sep[0] + " ","")
                                saya = cl.getGroupIdsJoined()
                                for group in saya:
-                                   cl.sendMessage(group,"[ Broadcast ]\n" + str(pesan))
+                                   cl.sendMessage(group,"【さัএπัஞ✵ບิथℓℓҨतΩ】\n" + str(pesan))
 
                         elif text.lower() == "mykey":
                           if wait["selfbot"] == True:
